@@ -1,0 +1,326 @@
+$borderRadius: 10px;
+
+.logo {
+    text-align: center;
+    padding-top: 2em;
+    
+}
+
+.logo-svg {
+    height: 120px;
+}
+
+.badge-container {
+    // border: 2px solid grey;
+    // margin: auto;
+    padding: 1em 1em 1em 0;
+    width: 150px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+    grid-template-areas: "inner-div";
+}
+
+.badge-div {
+    border-radius:75px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    grid-area: inner-div;
+}
+
+.badge {
+    width:150px;
+    vertical-align: middle;
+}
+
+.title-div {
+    // background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: rgb(201, 201, 201);
+    font-size: 45px;
+}
+
+// menu items ----------------------------------------------
+// menu items ----------------------------------------------
+
+.top-bar {
+    background-color: rgb(68, 71, 71);
+    border-radius: $borderRadius;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1110px;
+    margin: auto;
+}
+
+.home {
+    // background-color: yellowgreen;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    :hover {
+        border-radius: 10px;
+        background-color: #ddd;
+        color: green;
+    }
+}
+
+.fa-home {
+    font-size: 30px;
+    color: rgb(201, 201, 201);
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+/* Style the navigation menu */
+.burger-menu {
+    width: 55px;
+    height: 55px;
+    border-radius: $borderRadius $borderRadius 0 0;
+    text-align: center;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    :hover {
+        border-radius: 10px;
+        background-color: #ddd;
+        color: green;
+    }
+}
+
+.fa-bars {
+    font-size: 25px;
+    color: rgb(201, 201, 201);
+    padding: 0.4em;
+    text-decoration: none;
+}
+
+.menu-items {
+    // background-color: royalblue;
+    padding: 1em 2em 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    a {
+        color: rgb(201, 201, 201);
+        text-decoration: none;
+        padding: 0em 1em 0em 1em;
+        font-size: 14px;
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+.link-div {
+    display: flex;
+    justify-content: right;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+#myLinks {
+    display: none;
+    width: 215px;
+    background-color: rgb(37, 146, 37);
+    border-radius: $borderRadius 0 $borderRadius $borderRadius;
+}
+
+/* Style navigation menu links */
+#myLinks a {
+    color: rgb(201, 201, 201);
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: right;
+    font-size: 14px;
+    display: block;
+    &:hover {
+        border-radius: 10px;
+        background-color: rgb(201, 201, 201);
+        color: green;
+    }
+}
+
+// menu items ----------------------------------------------
+// menu items ----------------------------------------------
+
+// services description items ------------------------------
+// services description items ------------------------------
+
+.section-body {
+    display: flex;
+    justify-content: space-evenly;
+    // background-color: indigo;
+    max-width: 1110px;
+    margin: auto;
+}
+
+.service-container {
+    // background-color: green;
+    width: 200px;
+    padding: 3em 0 3em 0;
+    .service-image-div {
+        // background-color: greenyellow;
+        width: 150px;
+        padding: 0 0 1em 0;
+        .service-image {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .service-title-row {
+        display: none;
+        // background-color: grey;
+        height: 60px;
+        padding: 0 0 0.5em 0;
+        align-items: center;
+        font-size: 25px;
+    }
+    .service-title-column {
+        display: flex;
+        // background-color: grey;
+        height: 60px;
+        padding: 0 0 0.5em 0;
+        align-items: center;
+        font-size: 25px;
+    }
+    .service-content {
+        // background-color: indianred;
+        font-size: 16px;
+        padding: 0 0 0 0em;
+    }
+}
+
+
+// services description items ------------------------------
+// services description items ------------------------------
+
+//small screen
+@media (max-width: 765px) {
+    .menu-items {
+        display: none;
+    }
+    .burger-menu {
+        display: flex;
+    }
+    .home {
+        // background-color: yellowgreen;
+        width: 55px;
+        height: 55px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        :hover {
+            border-radius: 10px;
+            background-color: #ddd;
+            color: green;
+        }
+    }
+    .fa-home {
+        font-size: 25px;
+        color: rgb(201, 201, 201);
+        padding: 0.4em;
+        text-decoration: none;
+    }
+}
+
+//
+@media (min-width: 766px) {
+    .link-div {
+        display: none;
+    }
+}
+
+// service container sizing ---------------------------
+// service container sizing ---------------------------
+@media (min-width: 621px) and (max-width: 760px) {
+    .logo-svg {
+        height: 100px;
+    }
+    
+    .title {
+        font-size: 35px;
+    }
+    
+    .service-container {
+        width: 180px;
+        padding: 2em 0.5em 2em 0.5em;
+        .service-title {
+            display: flex;
+            // background-color: grey;
+            height: 60px;
+            align-items: center;
+            font-size: 20px;
+        }
+        .service-content {
+            // background-color: indianred;
+            font-size: 14px;
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 620px) {
+    .logo-svg {
+        height: 80px;
+    }
+    
+    .title {
+        font-size: 23px;
+    }
+    
+    .section-body {
+        // background-color: indigo;
+        display: block;
+    }
+
+    .service-container {
+        // background-color: lightcoral;
+        width: 260px;
+        padding: 2em 0.5em 2em 0.5em;
+        margin: auto;
+        .title-img-inline {
+            // background-color: blue;
+            width: 220px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        }
+        .service-image-div {
+            // background-color: lightgreen;
+            width: 70px;
+            height: 70px;
+            padding: 0 0 0 0;
+        }
+        .service-title-row {
+            display: flex;
+            // background-color: grey;
+            align-items: flex-end;
+            font-size: 20px;
+        }
+        .service-title-column {
+            display: none;
+        }
+        
+        .service-content {
+            // background-color: indianred;
+            font-size: 14px;
+            padding: 1em 0 0 0;
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+// service container sizing ---------------------------
+// service container sizing ---------------------------
