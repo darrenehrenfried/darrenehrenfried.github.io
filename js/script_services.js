@@ -28,7 +28,7 @@ function navBurger() {
         burgerMenu.style.backgroundColor = "transparent";
     } else {
         myLinks.style.display = "block";
-        burgerMenu.style.backgroundColor = "rgb(37, 146, 37)";
+        burgerMenu.style.backgroundColor = "rgb(124, 124, 124)";
         
     }
 }

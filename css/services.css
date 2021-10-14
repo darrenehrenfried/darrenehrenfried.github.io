@@ -146,9 +146,6 @@
 }
 
 .link-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
@@ -157,8 +154,7 @@
 /* Hide the links inside the navigation menu (except for logo/home) */
 #myLinks {
   display: none;
-  width: 215px;
-  background-color: #259225;
+  background-color: #7c7c7c;
   border-radius: 10px 0 10px 10px;
 }
 
